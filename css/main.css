@@ -35,13 +35,57 @@ table {
   box-sizing: border-box; }
 
 .page-section {
-  padding: 40px 15px; }
+  padding: 20px 15px; }
+
+.main-nav {
+  opacity: 0;
+  top: -100px;
+  transition: opacity 0.5s ease-in-out;
+  position: fixed;
+  background-color: #fff;
+  left: 0;
+  right: 0; }
+  .main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right; }
+    .main-nav ul li {
+      display: inline-block; }
+      .main-nav ul li a {
+        display: block;
+        line-height: 85px;
+        padding: 0 20px;
+        color: #2E2E2E;
+        text-decoration: none;
+        text-transform: uppercase; }
+        .main-nav ul li a:hover {
+          color: #F7CE3E; }
+
+.main-nav--is-visible {
+  opacity: 1;
+  top: 0; }
 
 .skills-item {
   display: block; }
 
 .skills-title {
-  color: blue; }
+  color: #676767; }
+
+.skills-icon {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  border-radius: 50%; }
+  .skills-icon:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+    transform: scale(0.8); }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -57,29 +101,77 @@ body {
   margin: 0 auto;
   width: 100%; }
 
-nav
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  float: right; }
-  nav
-  ul li {
-    display: inline-block; }
-    nav
-    ul li a {
-      display: block;
-      line-height: 85px;
-      padding: 0 20px;
-      color: #2E2E2E;
-      text-decoration: none;
-      text-transform: uppercase; }
-      nav
-      ul li a:hover {
-        color: #ABABAB; }
-
 #home {
   width: 100%;
+  height: 100vh; }
+
+h2 {
+  color: #2D2C2C; }
+
+p {
+  color: #939393; }
+
+.hero {
+  background: url("http://www.solve-ideas.com/wp-content/uploads/ADCB_Hover_20150826.jpg") 0/cover;
+  width: 100%;
+  height: 100vh; }
+
+.hero-content {
+  position: relative;
+  padding: 250px 50px;
+  float: right; }
+  .hero-content h2 {
+    font-size: 3rem;
+    color: #F7CE3E;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px; }
+
+.about-title {
+  text-align: center; }
+
+#about {
+  color: #000;
+  text-align: left;
+  padding: 50px 0; }
+  #about .about-text {
+    padding-left: 50px; }
+    #about .about-text h2, #about .about-text h4 {
+      font-size: 3rem;
+      color: #F7CE3E;
+      letter-spacing: 1.2px;
+      padding: 0 20px; }
+
+.about-text p {
+  line-height: 1.8;
+  padding: 20px 20px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #3e3b3b; }
+
+#about .about-img, #about .about-text {
+  display: inline-block;
+  width: 49%; }
+
+#projects {
   height: 400px; }
+
+#contact {
+  height: 400px;
+  background-color: #3e3b3b; }
+
+form {
+  margin: 20px 20px; }
+
+footer {
+  width: 100%;
+  background-color: #565555;
+  text-align: center; }
+
+footer p {
+  height: 80px;
+  line-height: 80px;
+  color: #F7CE3E;
+  margin: 0; }
 
 /*# sourceMappingURL=main.css.map */

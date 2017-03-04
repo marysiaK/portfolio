@@ -11,15 +11,15 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav class="container">
+        <nav class="container main-nav">
             <div class="row">
                 <div class="responsive"></div>
                 <ul>
-                    <li><a href="#home">Strona główna</a></li>
-                    <li><a href="#about">O mnie</a></li>
-                    <li><a href="#skills">Umiejętności</a></li>
-                    <li><a href="#projects">Moje projekty</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li ><a class="main-nav__link" href="#home">Strona główna</a></li>
+                    <li ><a class="main-nav__link" href="#about">O mnie</a></li>
+                    <li ><a class="main-nav__link" href="#skills">Umiejętności</a></li>
+                    <li ><a class="main-nav__link" href="#projects">Moje projekty</a></li>
+                    <li ><a class="main-nav__link" href="#contact">Kontakt</a></li>
                 </ul>
                 </div>
             </div>
@@ -28,15 +28,27 @@
     <!-- HOME SECTION -->
     <section id="home" class="page-section">
         <div class="container">
-            <div id="slogan">
-                <h2>....</h2>
-                <p>...</p>
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>Lorem ipsum </h2>
+                    <p>...</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- ABOUT SECTION -->
     <section id="about" class="page-section">
-        <h2>O mnie</h2>
+        <h2 class="about-title">O mnie</h2>
+        <div class="container">
+                <div class="about-img ">
+                    <img src="http://i42.photobucket.com/albums/e309/toethmbs/PENCILBOX%20SHOP/IMG_0963s.jpg" alt="my photo">
+                </div>
+                <div class="about-text">
+                    <h2 class="">o mnie.</h2>
+                    <h4 class="">Lorem ipsum</h4>
+                    <p class="">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+                </div>
+            </div>
     </section>
      <!-- SKILLS SECTION -->
     <section id="skills" class="page-section page-section-skills" >
@@ -107,15 +119,46 @@
         </div>
     </section>
      <!-- PROJECTS SECTION -->
-    <section id="projects" class="page-section">
+    <section id="projects" class="page-section page-projects">
         <h2>Moje projekty</h2>
     </section>
      <!-- CONTACT SECTION -->
-    <section id="contact" class="page-section">
-        <h2>Kontakt</h2>
+   <section id="contact" class="page-section page-contact">
+        <!-- <h2>Kontakt</h2>
     </section>
-    <!-- FOOTER -->
-    <footer></footer>
+     FOOTER -->
+   <!-- <footer></footer -->
+
+     <h2>Skontaktuj się ze mną</h2>
+     
+
+      <form action="https://formspree.io/marysia.kolaczynska@gmail.com" class="contact-form" method="post">
+            <div class="form-group">
+        <label for="exampleInputName">Imię i Nazwisko</label>
+        <input type="name" class="form-control input-lg " id="exampleInputName" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail">Email</label>
+        <input type="text" class="form-control" id="exampleInputEmail" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputMessage">Wiadomość</label>
+        <textarea class="form-control" rows="5" placeholder="Message..."></textarea>
+    </div>
+            <button type="submit" value="Wyślij" class="btn-submit">Wyślij</button>
+        </form>
+        <div class="contact-info">
+            <a href="mailto:marysia.kolaczynska@gmail.com"><span><i class="icon-pencil"></i></span>e-mail: marysia.kolaczynska@gmail.com</a>
+            <a href="tel:603-100-508"><span><i class=""></i></span>tel. 603 100 508</a>
+            <a href="https://github.com/marysiaK"><span><i class=""></i></span>Github</a>
+        </div>
+     </section>
+  <footer>
+    <p>&copy;  2017 Marysia Kołaczyńska</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery.circlechart.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
 

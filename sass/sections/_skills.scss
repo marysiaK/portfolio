@@ -1,3 +1,7 @@
+.skills-list {
+	//to do.. reset list
+	//list-style-type: none;
+}
 .skills-item {
 	display: block;
 }
@@ -6,5 +10,21 @@
 	color: $title-color;
 }
 .skills-icon {
-	//to do..
+
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  border-radius: 50%;
+
+&:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 50%;
+  transform: scale(0.8);
+}
+	
 }
