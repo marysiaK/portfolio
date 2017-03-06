@@ -9,6 +9,10 @@
 
 @import 'sections/_skills.scss';
 
+@import 'sections/_projects.scss';
+
+@import 'sections/_contact.scss';
+
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Overpass:400,700|Oswald:400,700&subset=latin-ext');
 
 body {
@@ -40,11 +44,13 @@ p {
 }
 .hero {
     background: url('http://www.solve-ideas.com/wp-content/uploads/ADCB_Hover_20150826.jpg') 0/cover;
-    width: 100%;
+    width: calc(100% + 15px + 15px);
     height: 100vh;
+    margin: 0 -15px;
+
 }
 .hero-content {
-	 position: relative;
+	position: relative;
     padding: 250px 50px;
     float: right;
 
@@ -60,9 +66,9 @@ p {
 	text-align: center;
 }
 #about {
-  color: #000;
-  text-align: left;
-  padding: 50px 0; 
+  	color: #000;
+  	text-align: left;
+  	padding: 50px 0; 
 
   		 .about-text {
     		padding-left: 50px;
@@ -76,33 +82,26 @@ p {
 	}
 }
     .about-text p {
-      line-height: 1.8;
-      padding: 20px 20px;
-      font-size: 1.4rem;
-      font-weight: 400;
-      color: $primary-color; 
+      	line-height: 1.8;
+     	 padding: 20px 20px;
+      	font-size: 1.4rem;
+      	font-weight: 400;
+      	color: $primary-color; 
   }
    
   #about .about-img, #about .about-text {
-    display: inline-block;
-    width: 49%; 
+    	display: inline-block;
+    	width: 49%; 
 }
 
 #projects {
-	height:400px;
+	height:600px;
 }
 
-#contact {
-    height: 400px;
-    background-color: $primary-color;
-}
-	form {
-	margin: 20px 20px;
-    
-}
+
 footer {
     width: 100%;
-    background-color: $secondary-color;
+    background-color: $primary-color;
     text-align: center;
 }
 footer p {

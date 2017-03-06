@@ -1,13 +1,18 @@
 .skills-list {
 	//to do.. reset list
 	//list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+
 }
 .skills-item {
-	display: block;
-}
 
+
+}
 .skills-title {
 	color: $title-color;
+  
 }
 .skills-icon {
 
