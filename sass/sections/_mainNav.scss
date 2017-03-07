@@ -8,6 +8,9 @@
 	padding: 10px;
 
 	 .main-nav__links {
+	 	display: none;
+	 	opacity: 0;
+		transition: opacity 0.5s ease-in-out;
 	 	left: 0;
 	 	right: 0;
 	 	top: 0;
@@ -16,7 +19,6 @@
 	 	text-align: center;
 	 	background-color: $white;
 	 	position: fixed;
-	 	display: none;
 		margin: 0;
 		list-style-type: none;
 		float: right;
@@ -32,6 +34,7 @@
 				color: #2E2E2E;
 				text-decoration: none;
 				text-transform: uppercase;
+				
 				
 				&:hover {
 					color: $marigold-color;
@@ -79,6 +82,7 @@
 		display: block;
 		position: absolute;
 		left: 0;
+		transition: transform 0.5s ease-in-out;
 
 		&:first-of-type {
 			top: 0;
@@ -99,12 +103,14 @@
 	top: 0;
 }
 
-// mobile navigation
+// mobile navigation test
 
 .mobile-nav--open {
 
 	.main-nav__links {
 		display: block;
+		opacity: 1;
+
 	}
 	.hamburger-menu span { 
 		&:first-of-type, &:nth-of-type(4) {
@@ -121,47 +127,3 @@
 .main-nav__link {
 	display: block;
 }
-//.hamburger-menu span:before {
-//  transform: rotate(45deg);
-//}
-//.hamburger-menu span:after {
-  //transform: rotate(-45deg);
-//} 
-// .hamburger-menu {
-//     span {
-//         transition: 300ms ease-in-out;
-//         background-color: #fff;
-//         position: relative;
-//         width: 24px;
-//         height: 3px;
-//     }
-//     span:last-child {
-//         -webkit-transform: rotate(-45deg);
-//         -ms-transform: rotate(-45deg);
-//         -o-transform: rotate(-45deg);
-//         transform: rotate(-45deg);
-//         top: -7px;
-//     }
-//     span:nth-child(2) {
-//         -webkit-transform: rotate(45deg);
-//         -ms-transform: rotate(45deg);
-//         -o-transform: rotate(45deg);
-//         transform: rotate(45deg);
-//         top: 0px;
-//     }
-//     span:nth-child(3) {
-//         opacity: 0;
-//     }
-//     &.collapsed {
-//         .span 
-
-//          {
-//             -webkit-transform: rotate(0deg);
-//             -ms-transform: rotate(0deg);
-//             -o-transform: rotate(0deg);
-//             transform: rotate(0deg);        
-//             top: 0;
-//             opacity: 1;
-//         }
-//     }
-// }

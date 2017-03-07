@@ -26,20 +26,12 @@ $( document ).ready(function() {
 	});
 
 	// mobile navigation
-// 		$( ".cross" ).hide();
-// 		$( ".main-nav__links" ).hide();
-// 		$('.hamburger-menu').click (function() { 
-// 		$('.main-nav__links').slideToggle( "slow", function() {
-// 		$( ".hamburger-menu" ).hide();
-// 		$( ".cross" ).show();
-// 		});
-// 		});
 
-// 		$( ".cross" ).click(function() {
-// 		$( ".main-nav__links" ).slideToggle( "slow", function() {
-// 		$( ".cross" ).hide();
-// 		$( ".hamburger-menu" ).show();
-// 		});
-// 		});	
-		
+	$('.hamburger-menu').click(function() { 
+		$('.main-nav').toggleClass('mobile-nav--open');
+	});
+
+	$('.main-nav__link').click(function() { 
+		$('.main-nav').removeClass('mobile-nav--open');
+	});
  });
