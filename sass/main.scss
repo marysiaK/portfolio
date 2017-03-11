@@ -7,6 +7,8 @@
 
 @import 'sections/_mainNav.scss';
 
+@import 'sections/_about.scss';
+
 @import 'sections/_skills.scss';
 
 @import 'sections/_projects.scss';
@@ -16,7 +18,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Overpass:400,700|Oswald:400,700&subset=latin-ext');
 
 body {
-    font-family: 'Lato', sans-serif;
+    //font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .row:before,
@@ -27,7 +30,7 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1300px;
 	margin: 0 auto;
 	width: 100%;
 }
@@ -42,33 +45,17 @@ h2 {
 p {
 	color: $paragraph-color;
 }
-.hero {
-    background: url('http://www.solve-ideas.com/wp-content/uploads/ADCB_Hover_20150826.jpg') 0/cover;
-    width: calc(100% + 15px + 15px);
-    height: 100vh;
-    margin: 0 -15px;
-
-}
-.hero-content {
-	position: relative;
-    padding: 250px 50px;
-    float: right;
-
-		 h2 {
-		 	font-size: 3rem;
-		    color: $marigold-color;
-		    font-weight: bold;
-		    letter-spacing: 2px;
-		    margin-bottom: 20px;
-		}
-	}
 .about-title {
 	text-align: center;
+	font-size: 24px;
+}
+.about-img img {
+	padding-left: 20px;
 }
 #about {
   	color: #000;
   	text-align: left;
-  	padding: 50px 0; 
+  	//padding: 50px 0; 
 
   		 .about-text {
     		padding-left: 50px;
@@ -86,14 +73,45 @@ p {
      	 padding: 20px 20px;
       	font-size: 1.4rem;
       	font-weight: 400;
-      	color: $primary-color; 
+      	color: $secondary-color; 
   }
+    .about-text a {
+  	text-decoration: none;
+    float: right;
+    margin-top: -20px;
+}
    
-  #about .about-img, #about .about-text {
+ #about .about-img, #about .about-text {
     	display: inline-block;
     	width: 49%; 
 }
 
+.hero {
+    background: url('http://www.solve-ideas.com/wp-content/uploads/ADCB_Hover_20150826.jpg') 0/cover;
+    background-attachment: fixed;
+    //width: calc(100% + 15px + 15px);
+    width: 100%;
+    height: 100vh;
+    //margin: 0 -15px;
+
+}
+.hero-content {
+	position: relative;
+    padding: 250px 50px;
+    float: right;
+
+		h2 {
+		 	font-size: 3rem;
+		    color: $marigold-color;
+		    font-weight: bold;
+		    letter-spacing: 2px;
+		    margin-bottom: 20px;
+		}
+
+		span {
+			color: $white;
+	}
+}
 #projects {
 	height:600px;
 }
