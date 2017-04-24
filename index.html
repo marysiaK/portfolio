@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <title>Marysia Kołaczyńska - Front-End Developer</title>
     <meta name="description" content="Marysia Kołaczyńska Portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -17,7 +16,7 @@
             <div class="hamburger-menu">
                 <span></span>
                 <span></span>
-                <span></span>
+                <span></span>    
                 <span></span>
             </div>
             <ul class="main-nav__links">
@@ -30,11 +29,11 @@
         </nav>
     </header>
     <!-- HOME SECTION -->
-    <section id="home" class="page-section ">
+    <section id="home" class="page-section page-section-home">
         <div class="container">
-            <div class="hero">
+            <div class="hero">  
                 <div class="hero-content">
-                    <h2><span>Jestem </span> MARYSIA</h2> <p>Junior Front-end Developer</p>
+                    <h2>Jestem Marysia</h2><p>Junior Frond-end Developer</p>
                 </div>
             </div>
         </div>
@@ -57,24 +56,54 @@
      <!-- SKILLS SECTION -->
     <section id="skills" class="page-section page-section-skills" >
         <h2 class="section-title">Umiejętności</h2>
-        <div class="content-container">
+        <div class="content-container skills-container">
+            <h3 class="section-subtitle">Poznałam</h3>
             <ul class="skills-list">
                 <li class="skills-item">
-                    <h4 class="skills-title">HTML/CSS</h4>
-                    <div class="skills-circle" data-percent="65"></div>
+                    <img src="images/HTML5.png">
+                    <span class="skills-level">Poziom średnio-zaawansowany</span>
                 </li>
                 <li class="skills-item">
-                    <h4 class="skills-title">JS</h4>
-                    <div class="skills-circle" data-percent="65"></div>
-                    
+                    <img src="images/CSS3.png"> 
+                    <span class="skills-level">Poziom średnio-zaawansowany</span>
                 </li>
                 <li class="skills-item">
-                    <h4 class="skills-title">JQUERY</h4>
-                    <div class="skills-circle" data-percent="65"></div>
+                    <img src="images/JS.png">
+                    <span class="skills-level">Poziom podstawowy</span>
                 </li>
                 <li class="skills-item">
-                    <h4 class="skills-title">SASS</h4>
-                    <div class="skills-circle" data-percent="65"></div>
+                    <img src="images/JQUERY.png">
+                    <span class="skills-level">Poziom średnio-zaawansowany</span>
+                </li>
+                <li class="skills-item">
+                   <img src="images/RWD.png">
+                   <span class="skills-level">Poziom średnio-zaawansowany</span>
+                </li>
+                <li class="skills-item">
+                  <img src="images/SASS.png">
+                  <span class="skills-level">Poziom średnio-zaawansowany</span> 
+                </li>
+                <li class="skills-item">
+                   <img src="images/BOOTSTRAP.png">
+                   <span class="skills-level">Poziom średnio-zaawansowany</span>
+                </li>
+                <li class="skills-item">
+                   <img src="images/GIT.png">
+                   <span class="skills-level">Poziom średnio-zaawansowany</span>
+                </li>
+                <li class="skills-item">
+                   <img src="images/GULP.png">
+                   <span class="skills-level">Poziom średnio-zaawansowany</span>
+                </li>
+                <li class="skills-item">
+                   <img src="images/PS.png">
+                   <span class="skills-level">Poziom średnio-zaawansowany</span>
+                </li>
+            </ul>
+            <h3 class="section-subtitle">Chcę się nauczyć</h3>
+             <ul class="skills-list">
+                <li class="skills-item">
+                    <img src="images/REACT.png">
                 </li>
             </ul>
         </div>
@@ -85,33 +114,29 @@
         <div class="content-container">
             <ul class="projects-list">
                 <li class="projects-item ">
-                        <div class=""photo"><img src="http://placehold.it/400x400" alt="">
-                        <span class="projects-info">
-                            <h5 class="projects-title">Lorem</h5>
+                    <div class="project-image" style="background-image: url('http://placehold.it/300x300')"></div>
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h5 class="project-title">Lorem ipsum</h5>
+                            <p class="project-description"> JS, HTML, CSS</p>
                             <a href="demo" class="projects-demo" target="_blank">demo</a>
                             <a href="https://github.com/" class="projetcs-github" target="_blank">github</a>
-                        </span>
                         </div>
-                    </li>
-                    <li class="projects-item ">
-                        <div class=""photo"><img src="http://placehold.it/400x400" alt="">
-                        <span class="projects-info">
-                            <h5 class="projects-title">Lorem</h5>
+                    </div>
+                </li>
+                <li class="projects-item ">
+                   <div class="project-image" style="background-image: url('http://placehold.it/300x300')"></div>
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h5 class="project-title">Lorem ipsum</h5>
+                            <p class="project-description"> JS, HTML, CSS</p>
                             <a href="demo" class="projects-demo" target="_blank">demo</a>
                             <a href="https://github.com/" class="projects-github" target="_blank">github</a>
-                        </span>
                         </div>
-                    </li>
-                    <li class="projects-item ">
-                        <div class=""photo"><img src="http://placehold.it/400x400" alt="">
-                        <span class="projects-info">
-                            <h5 class="projects-title">Lorem</h5>
-                            <a href="demo" class="projects-demo" target="_blank">demo</a>
-                            <a href="https://github.com/" class="projects-github" target="_blank">github</a>
-                        </span>
-                        </div>
-                    </li>
-                </ul>  
+                    </div>
+                </li>
+            </ul>  
+        </div>
     </section>
      <!-- CONTACT SECTION -->
    <section id="contact" class="page-section page-section-contact">
@@ -138,7 +163,6 @@
         <p>&copy;  2017 Marysia Kołaczyńska</p>
     </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/jquery.circlechart.js"></script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="js/main.js"></script>
 </body>

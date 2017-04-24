@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Overpass:400,700|Oswald:400,700&subset=latin-ext');
 
 @import 'global/_reset.scss';
 
 @import 'global/_variables.scss';
 
 @import 'global/_layout.scss';
+
+@import 'sections/_home.scss';
 
 @import 'sections/_mainNav.scss';
 
@@ -15,119 +18,6 @@
 
 @import 'sections/_contact.scss';
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Overpass:400,700|Oswald:400,700&subset=latin-ext');
-
-body {
-    //font-family: 'Lato', sans-serif;
-    font-family: 'Roboto', sans-serif;
-
-}
-
-.row:before,
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.container {
-	max-width: 1300px;
-	margin: 0 auto;
-	width: 100%;
-}
-
-#home {
-	width:100%;
-	height: 100vh;
-}
-h2 {
-	color: $color-heading-primary;
-}
-p {
-	color: $paragraph-color;
-}
-.about-title {
-	text-align: center;
-	font-size: 24px;
-}
-.about-img img {
-	padding-left: 20px;
-}
-#about {
-  	color: #000;
-  	text-align: left;
-  	//padding: 50px 0; 
-
-  		 .about-text {
-    		padding-left: 50px;
-
-    			 h2, h4 {
-      				font-size: 3rem;
-      				color: $marigold-color;
-      				letter-spacing: 1.2px; 
-      				padding: 0 20px;
-    	}
-	}
-}
-    .about-text p {
-      	line-height: 1.8;
-     	 padding: 20px 20px;
-      	font-size: 1.4rem;
-      	font-weight: 400;
-      	color: $secondary-color; 
-  }
-    .about-text a {
-  	text-decoration: none;
-    float: right;
-    margin-top: -20px;
-}
-   
- #about .about-img, #about .about-text {
-    	display: inline-block;
-    	width: 49%; 
-}
-
-.hero {
-    background: url('http://www.solve-ideas.com/wp-content/uploads/ADCB_Hover_20150826.jpg') 0/cover;
-    background-attachment: fixed;
-    //width: calc(100% + 15px + 15px);
-    width: 100%;
-    height: 100vh;
-    //margin: 0 -15px;
-
-}
-.hero-content {
-	position: relative;
-    padding: 250px 50px;
-    float: right;
-
-		h2 {
-		 	font-size: 3rem;
-		    color: $marigold-color;
-		    font-weight: bold;
-		    letter-spacing: 2px;
-		    margin-bottom: 20px;
-		}
-
-		span {
-			color: $white;
-	}
-}
-#projects {
-	height:600px;
-}
-
-
-footer {
-    width: 100%;
-    background-color: $primary-color;
-    text-align: center;
-}
-footer p {
-    height: 80px;
-    line-height: 80px;
-    color: $marigold-color;
-    margin: 0;  
-}
+@import 'sections/_footer.scss';
 
 
