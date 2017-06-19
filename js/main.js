@@ -12,7 +12,6 @@ $( document ).ready(function() {
     });
 
     // mobile navigation
-
     $('.hamburger-menu').click(function() { 
         $('.main-nav').toggleClass('mobile-nav--open');
     });
@@ -23,10 +22,9 @@ $( document ).ready(function() {
 
     // scroll reveal
     window.sr = ScrollReveal();
-    sr.reveal('.page-section', { duration: 1000, distance: '50px' });
+    sr.reveal('.page-section', { duration: 1000, distance: '0', viewFactor: 0.4});
 
     // smooth scroll
-
     $(function() {
       $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -34,7 +32,7 @@ $( document ).ready(function() {
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
           if (target.length) {
             $('html, body').animate({
-              scrollTop: target.offset().top
+              scrollTop: target.offset().top -110,
             }, 1000);
             return false;
           }
