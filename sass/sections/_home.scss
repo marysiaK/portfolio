@@ -8,12 +8,15 @@ h2 {
 p {
     color: $secondary-color;
 }
-
-.hero {
-    background: url('../images/marysia4.jpg') 0/cover;
+.hero {      
+    background: url('../images/marysia1.jpg') 0/cover;
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
+
+    @media screen and (min-width: $desktop-min) { 
+        background: url('../images/marysia4.jpg') 0/cover;
+    }
 }
 .hero-content {
     position: relative;
