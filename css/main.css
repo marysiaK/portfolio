@@ -141,6 +141,7 @@ p {
         padding: 0 20px; } }
 
 .hamburger-menu {
+  margin: 5px 30px;
   padding: 10px;
   right: 10px;
   top: 10px;
@@ -152,7 +153,7 @@ p {
   .hamburger-menu span {
     border-radius: 5px;
     height: 4px;
-    width: 20px;
+    width: 45px;
     background-color: #F7CE3E;
     display: block;
     position: absolute;
@@ -164,9 +165,9 @@ p {
     .hamburger-menu span:first-of-type {
       top: 0; }
     .hamburger-menu span:nth-of-type(2), .hamburger-menu span:nth-of-type(3) {
-      top: 5px; }
+      top: 12px; }
     .hamburger-menu span:nth-of-type(4) {
-      top: 10px; }
+      top: 24px; }
 
 .main-nav--is-scrolled-down {
   opacity: 1;
@@ -305,7 +306,7 @@ p {
   z-index: 2; }
 
 .page-section-projects {
-  height: 600px; }
+  height: 700px; }
 
 .projects-list {
   padding: 50px 10px;
