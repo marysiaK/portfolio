@@ -66,23 +66,25 @@ p {
   color: #E6E6E6; }
 
 .hero {
-  background: url("../images/notebook.jpg");
-  background-repeat: no-repeat;
+  background: url("../images/notebook.jpg") no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
   height: 100vh; }
 
 .hero-content {
-  position: relative;
-  padding: 250px 50px;
-  float: right; }
-  .hero-content h2 {
-    font-size: 3rem;
+  position: absolute;
+  top: 40%;
+  left: 10%; }
+  .hero-content h1 {
+    font-size: 2rem;
     color: #F7CE3E;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 20px; }
+    @media screen and (min-width: 1024px) {
+      .hero-content h1 {
+        font-size: 3rem; } }
   .hero-content span {
     color: #fff; }
 
@@ -225,7 +227,8 @@ p {
   .page-section-about .about-text a {
     text-decoration: none;
     float: right;
-    margin-top: -20px; }
+    margin-top: -20px;
+    margin-right: 20px; }
   @media screen and (min-width: 1024px) {
     .page-section-about .about-img {
       float: left;
@@ -307,7 +310,7 @@ p {
   z-index: 2; }
 
 .page-section-projects {
-  height: 830px; }
+  padding-bottom: 30px; }
 
 .projects-list {
   padding: 50px 10px;
@@ -393,7 +396,9 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 50px 15px; }
+    padding: 50px 15px;
+    max-width: 800px;
+    margin: 0 auto; }
     @media screen and (min-width: 1024px) {
       .page-section-contact .content-wrapper {
         -webkit-box-orient: horizontal;
@@ -406,8 +411,8 @@ p {
       flex-basis: 100%; }
   @media screen and (min-width: 1024px) {
     .contact-form-wrapper {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%;
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
       padding-right: 30px; } }
 
 .contact-info {
@@ -416,8 +421,8 @@ p {
   margin-top: 30px; }
   @media screen and (min-width: 1024px) {
     .contact-info {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%;
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%;
       margin-top: 0; } }
   .contact-info .contact-link {
     float: none;
@@ -469,6 +474,15 @@ p {
     padding: 15px;
     box-shadow: inset 0px -20px 43px -40px rgba(0, 0, 0, 0.75); }
 
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  display: block;
+  padding: 7px 5px;
+  margin-top: 10px;
+  color: #676767; }
+
 .btn-send {
   background-color: #3e3b3b;
   color: #fff;
@@ -481,6 +495,10 @@ p {
   width: 100px;
   text-transform: uppercase;
   -webkit-appearance: none; }
+  @media screen and (min-width: 1024px) {
+    .btn-send {
+      position: relative;
+      left: 5px; } }
   .btn-send:hover {
     background-color: #F7CE3E; }
 

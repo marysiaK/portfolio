@@ -12,7 +12,7 @@ $( document ).ready(function() {
     });
 
     // mobile navigation
-    $('.hamburger-menu').click(function() { 
+    $('.hamburger-menu').click(function()  { 
         $('.main-nav').toggleClass('mobile-nav--open');
     });
 
@@ -22,7 +22,7 @@ $( document ).ready(function() {
 
     // scroll reveal
     window.sr = ScrollReveal();
-    sr.reveal('.page-section', { duration: 1000, distance: '0', viewFactor: 0.4});
+    sr.reveal('.page-section', { duration: 1000, distance: '0', viewFactor: 0.2, mobile: false});
 
     // smooth scroll
     $(function() {
