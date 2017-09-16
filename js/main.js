@@ -2,7 +2,7 @@ $( document ).ready(function() {
     
     // main navigation visibility on scroll
     $(window).scroll(function() {
-        if ($(document).scrollTop() > 300) {
+        if ($(document).scrollTop() > 100) {
             console.log("make main-nav visible here");
             $('.main-nav').addClass('main-nav--is-scrolled-down');
 
