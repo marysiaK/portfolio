@@ -74,7 +74,7 @@ p {
 .hero-content {
   position: absolute;
   top: 40%;
-  left: 10%; }
+  left: 5%; }
   .hero-content h1 {
     font-size: 2rem;
     color: #F9BA22;
@@ -261,7 +261,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  padding: 50px;
+  padding: 30px 50px;
   max-width: 700px;
   margin: 0 auto; }
 
@@ -313,7 +313,7 @@ p {
   padding-bottom: 30px; }
 
 .projects-list {
-  padding: 50px 10px;
+  padding: 30px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,7 +468,7 @@ p {
     box-shadow: inset 0px -20px 43px -40px rgba(0, 0, 0, 0.75); }
 
 .label {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   text-align: left;
   display: block;
