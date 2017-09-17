@@ -22,7 +22,7 @@ $( document ).ready(function() {
 
     // scroll reveal
     window.sr = ScrollReveal();
-    sr.reveal('.page-section', { duration: 1000, distance: '0', viewFactor: 0.2, mobile: false});
+    sr.reveal('.page-section', { duration: 1000, distance: '0', viewFactor: 0.2, mobile: true });
 
     // smooth scroll
     $(function() {
