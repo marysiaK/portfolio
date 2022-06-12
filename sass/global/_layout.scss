@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+} 
+body {
+    font-family: $body-font;
+}
+.content-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+.section-title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: $first-font;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop-min) {
+        font-size: 99.2px;
+    }
+}
+
+
+.section-subtitle {
+    color: transparentize($title-color, 0.2);
+}
+a {
+    color: inherit;
+}
